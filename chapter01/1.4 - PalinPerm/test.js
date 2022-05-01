@@ -36,6 +36,7 @@ function palinPerm(string) {
 
 console.log(palinPerm('Tact Coa'));
 
+
 function palinPerm(string) {
   let oddCount = 0;
   const hash = {};
