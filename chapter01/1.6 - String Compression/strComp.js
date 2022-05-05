@@ -3,6 +3,7 @@ var strComp = function(string) {
   var currChar = '';
   var currCount = '';
   var maxCount = 1;
+
   for (var i = 0; i < string.length; i++) {
     if (currChar !== string[i]) {
       console.log(currChar, string[i], i);
@@ -14,6 +15,7 @@ var strComp = function(string) {
       currCount++;
     }
   }
+
   compressed = compressed + currChar + currCount;
   maxCount = Math.max(maxCount, currCount);
 
@@ -21,5 +23,6 @@ var strComp = function(string) {
 };
 
 // Test
-console.log('aaaaaa', strComp('aaaaaa'), 'a6');
-console.log('aabcccccaaa', strComp('aabcccccaaa'), 'a2b1c5a3');
+// console.log('aaaaaa', strComp('aaaaaa'), 'a6');
+// console.log('aabcccccaaa', strComp('aabcccccaaa'), 'a2b1c5a3');
+console.log('abb');
