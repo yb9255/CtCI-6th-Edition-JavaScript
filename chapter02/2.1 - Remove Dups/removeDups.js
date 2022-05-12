@@ -1,5 +1,5 @@
 // remiveDups redone
-const LinkedList = require("../util/LinkedListX");
+const LinkedList = require('../util/LinkedListX');
 
 function removeDuplicates(list) {
   const _set = new Set();
@@ -15,8 +15,7 @@ function removeDuplicates(list) {
       prev.next = cur.next;
       cur = cur.next;
       elem.next = null;
-    }
-    else {
+    } else {
       // add to the set
       _set.add(cur.value);
       prev = cur;
